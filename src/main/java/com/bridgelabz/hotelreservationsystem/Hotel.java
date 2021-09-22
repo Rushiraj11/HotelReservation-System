@@ -5,6 +5,7 @@ public class Hotel {
     private int rate;
 
     public Hotel(String name, int rate) {
+        super();
         this.name = name;
         this.rate = rate;
     }
@@ -24,5 +25,4 @@ public class Hotel {
     public void setRate(int  rate) {
         this.rate = rate;
     }
-
 }
