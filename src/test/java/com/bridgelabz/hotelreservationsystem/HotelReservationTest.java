@@ -1,7 +1,8 @@
 package com.bridgelabz.hotelreservationsystem;
 
 import org.junit.Test;
-
+import java.util.List;
+import java.util.Arrays;
 import org.junit.Assert;
 
 
@@ -9,27 +10,32 @@ public class HotelReservationTest {
 
     @Test
     public void hotelNameAndRateTest1() {
-
         Hotel hotel = new Hotel("Lakewood", 110);
-
+        HotelReservation  hotelReservation = new HotelReservation();
+        hotelReservation.add(hotel);
+        hotelReservation.getHotelList();
         Assert.assertEquals("Lakewood", hotel.getName());
         Assert.assertEquals(110, hotel.getRate());
     }
     @Test
     public void hotelNameAndRateTest2() {
 
-        Hotel hotel1 = new Hotel("Bridgewood", 160);
-
-        Assert.assertEquals("Bridgewood", hotel1.getName());
-        Assert.assertEquals(160, hotel1.getRate());
+        Hotel hotel = new Hotel("Bridgewood", 160);
+        HotelReservation  hotelReservation = new HotelReservation();
+        hotelReservation.add(hotel);
+        hotelReservation.getHotelList();
+        Assert.assertEquals("Bridgewood", hotel.getName());
+        Assert.assertEquals(160, hotel.getRate());
     }
     @Test
     public void hotelNameAndRateTest3() {
 
-        Hotel hotel2 = new Hotel("Ridgewood", 220);
-
-        Assert.assertEquals("Ridgewood", hotel2.getName());
-        Assert.assertEquals(220, hotel2.getRate());
+        Hotel hotel = new Hotel("Ridgewood", 220);
+        HotelReservation  hotelReservation = new HotelReservation();
+        hotelReservation.add(hotel);
+        hotelReservation.getHotelList();
+        Assert.assertEquals("Ridgewood", hotel.getName());
+        Assert.assertEquals(220, hotel.getRate());
     }
 
 

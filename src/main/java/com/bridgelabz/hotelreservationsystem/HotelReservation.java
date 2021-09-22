@@ -10,21 +10,41 @@ public class HotelReservation {
         System.out.println("Welcome to hotel reservation system ");
     }
 
-    private List<Hotel> hotelList;
+//    private List<Hotel> hotelList;
+//
+//
+//    public HotelReservation() {
+//        this.hotelList = new ArrayList<Hotel>();
+//
+//    }
+//
+//    public void add(Hotel hotel) {
+//        this.hotelList.add(hotel);
+//    }
+//
+//    public List<Hotel> getHotelList() {
+//        return this.getHotelList();
+//    }
+
+   private List<Hotel> hotels;
 
     public HotelReservation() {
-        hotelList = new ArrayList<>();
+        this.hotels = new ArrayList<Hotel>();
     }
 
-    public void addHotel(Hotel hotel) {
-
-        if (hotelList.contains(hotel)) {
+    public void add(Hotel hotel) {
+        this.hotels.add(hotel);
+        if (hotels.contains(hotel)) {
             System.out.println("Hotel already exists");
         }
         else {
-            hotelList.add(hotel);
+            hotels.add(hotel);
             System.out.println("Hotel " + hotel.getName() + " added successfully");
         }
+    }
 
+    public List<Hotel> getHotelList() {
+        return this.hotels;
     }
 }
+
