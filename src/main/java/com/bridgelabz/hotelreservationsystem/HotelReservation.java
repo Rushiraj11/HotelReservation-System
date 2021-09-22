@@ -10,21 +10,6 @@ public class HotelReservation {
         System.out.println("Welcome to hotel reservation system ");
     }
 
-//    private List<Hotel> hotelList;
-//
-//
-//    public HotelReservation() {
-//        this.hotelList = new ArrayList<Hotel>();
-//
-//    }
-//
-//    public void add(Hotel hotel) {
-//        this.hotelList.add(hotel);
-//    }
-//
-//    public List<Hotel> getHotelList() {
-//        return this.getHotelList();
-//    }
 
    private List<Hotel> hotels;
 
